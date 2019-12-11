@@ -12,6 +12,7 @@ function [I, verified] = RigorousVerification(x_bar, pars)
 
 % Compute A, the numerical inverse of Df
 A = inv(Df(x_bar, pars));
+% A = [-0.052 -0.018 0.059; 0.048 -0.018 0.059; -0.012 -0.118 0];
 
 % Compute the Y0 bound
 Y0 = norm(A * f(x_bar, pars), Inf);

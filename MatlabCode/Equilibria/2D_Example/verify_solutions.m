@@ -14,7 +14,7 @@ if verified == true
   disp(['x1_bar = (' num2str(x1_bar(1), 16) ', ' num2str(x1_bar(2), 16) ')']);
   disp(['I1 = (' num2str(I1(1), 16) ', ' num2str(I1(2), 16) ')']);
 else
-  disp('Verification Falied for x1_bar!');
+  disp('Verification Failed for x1_bar!');
 end
 
 % Try to rigorously verify the solution x2_bar
@@ -25,7 +25,7 @@ if verified == true
   disp(['x2_bar = (' num2str(x2_bar(1), 16) ', ' num2str(x2_bar(2), 16) ')']);
   disp(['I2 = (' num2str(I2(1), 16) ', ' num2str(I2(2), 16) ')']);
 else
-  disp('Verification Falied for x2_bar!');
+  disp('Verification Failed for x2_bar!');
 end
 
 % Try to rigorously verify the solution x3_bar
@@ -36,7 +36,7 @@ if verified == true
   disp(['x3_bar = (' num2str(x3_bar(1), 16) ', ' num2str(x3_bar(2), 16) ')']);
   disp(['I3 = (' num2str(I3(1), 16) ', ' num2str(I3(2), 16) ')']);
 else
-  disp('Verification Falied for x3_bar!');
+  disp('Verification Failed for x3_bar!');
 end
 
 % Try to rigorously verify the solution x4_bar
@@ -47,7 +47,7 @@ if verified == true
   disp(['x4_bar = (' num2str(x4_bar(1), 16) ', ' num2str(x4_bar(2), 16) ')']);
   disp(['I4 = (' num2str(I4(1), 16) ', ' num2str(I4(2), 16) ')']);
 else
-  disp('Verification Falied for x4_bar!');
+  disp('Verification Failed for x4_bar!');
 end
 
 % Next plot the enclosures for each solution

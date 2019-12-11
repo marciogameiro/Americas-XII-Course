@@ -12,14 +12,15 @@ function [I, verified] = RigorousVerification(x_bar, lambda)
 
 
 % Compute the matrix A
-A = inv(Df(x_bar,lambda));
+% A = inv(Df(x_bar,lambda));
+A = (1 / (16 * x_bar(1) * x_bar(2) - 1)) * [2 * x_bar(2) -1; -1 8 * x_bar(1)];
 
 % Compute the Y0 bound using the sup norm
 Y0 = norm(A * f(x_bar,lambda), Inf);
 
 % Compute the Z0 bound using the sup norm
-Z0 = 0; % Since we use the exact inverse
 % Z0 = norm(eye(2) - A*Df(x_bar,lambda), Inf);
+Z0 = 0; % Since we use the exact inverse
 
 % Compute the Z2 bound using the sup norm
 Z2 = max(16*abs(x_bar(2))+2, 8+16*abs(x_bar(1)))/(abs(16*x_bar(1)*x_bar(2)-1));

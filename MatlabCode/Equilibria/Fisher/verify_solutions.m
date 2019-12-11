@@ -21,7 +21,7 @@ x_bar = Newton(@f, @Df, x0, lambda, max_itr, err_tol);
 
 % Display a message and finish if verificatioin failed
 if verified == false
-  disp('Verification Falied!');
+  disp('Verification Failed!');
   return;
 end
 

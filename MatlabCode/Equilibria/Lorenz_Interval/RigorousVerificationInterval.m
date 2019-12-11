@@ -32,7 +32,7 @@ r = sort(roots(p));
 
 % Need to decrease the interval
 % by a small value delta_r
-delta_r = 1e-13;
+delta_r = 1e-15;
 
 % Compute the interval I
 I = [r(1) + delta_r, r(2) - delta_r];

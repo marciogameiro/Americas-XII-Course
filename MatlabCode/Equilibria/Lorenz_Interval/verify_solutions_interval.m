@@ -19,7 +19,7 @@ x_bar = [8.4853; 8.4853; 27];
 
 % Display a message and finish if verificatioin failed
 if verified == false
-  disp('Verification Falied!');
+  disp('Verification Failed!');
   return;
 end
 
