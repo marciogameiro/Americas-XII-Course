@@ -10,9 +10,9 @@ sigma = 10; rho = 28; beta = 8/3;
 pars = [sigma rho beta];
 
 % Set the value of an equilibria for Lorenz
-% x_bar = [8.4853; 8.4853; 27];
+x_bar = [8.4853; 8.4853; 27];
 % x_bar = [8.4; 8.4; 26.5];
-x_bar = [sqrt(beta * (rho - 1)); sqrt(beta * (rho - 1)); rho - 1];
+% x_bar = [sqrt(beta * (rho - 1)); sqrt(beta * (rho - 1)); rho - 1];
 
 % Try to rigorously verify the solution x_bar
 [I, verified] = RigorousVerification(x_bar, pars);
