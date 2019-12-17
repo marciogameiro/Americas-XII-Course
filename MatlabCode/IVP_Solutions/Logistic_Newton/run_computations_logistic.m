@@ -1,6 +1,6 @@
 
 L = 3.0;
-N = 200;
+N = 300;
 
 max_itr = 20;
 err_tol = 1e-14;
@@ -17,9 +17,9 @@ Df = @(a) DF(a, L);
 
 [a, num_itr, converged] = Newton(f, Df, a0, max_itr, err_tol);
 
-nu = 0.8;
+nu = 1.0;
 
 [r_min, r_max, Z2, Z1 , Z0, Y0] = RadiiPolynomial(a, L, x0, nu);
 
 clr = [1 0 0]; % Red
-PlotSolutionTaylor(a, L, nu, clr)
+PlotSolutionTaylor(a, x0, L, nu, clr)

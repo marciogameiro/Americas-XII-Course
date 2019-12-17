@@ -1,4 +1,4 @@
-function PlotSolutionTaylor(a, L, nu, clr)
+function PlotSolutionTaylor(a, x0, L, nu, clr)
   % Plot solution from Taylor coefficients
 
   % Get the system size N
@@ -20,8 +20,12 @@ function PlotSolutionTaylor(a, L, nu, clr)
   % Rescale t by L
   t = L * t;
 
+  t0 = 0;
+
   % plot solutoion
-  plot(t, u, 'Color', clr, 'Linewidth', 3)
+  plot(t, u, 'Color', clr, 'LineWidth', 3)
+  hold on
+  plot(t0, x0, '*', 'Color', 'k', 'MarkerSize', 15)
   xlabel('$$t$$', 'Interpreter', 'Latex', 'FontSize', 25)
   ylabel('$$x(t)$$', 'Interpreter', 'Latex', 'FontSize', 25)
 end
